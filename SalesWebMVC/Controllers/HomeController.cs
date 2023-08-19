@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using static System.Net.WebRequestMethods;
 
 namespace SalesWebMVC.Controllers
 {
@@ -18,7 +19,8 @@ namespace SalesWebMVC.Controllers
         public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";
-
+            ViewData["Email"] = "marcelo@eu.com";
+            ViewData["Autor"] = "Marcelo Pereira";
             return View();
         }
 
